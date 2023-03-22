@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 634209934}
   - component: {fileID: 634209933}
   - component: {fileID: 634209932}
+  - component: {fileID: 634209936}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -276,10 +277,25 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2045544519}
   - {fileID: 1589227852}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &634209936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634209931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6bd1870e98db0b40b479f96f49f4d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToPlace: {fileID: 0}
+  placementIndicator: {fileID: 1468667494}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +473,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 944752604}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2045544520}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: SetScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &944752604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,7 +938,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1234765917}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 634209936}
+        m_TargetAssemblyTypeName: PlaceOnPlane, Assembly-CSharp
+        m_MethodName: PlaceObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1234765917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1363,6 +1403,7 @@ GameObject:
   - component: {fileID: 2045544518}
   - component: {fileID: 2045544517}
   - component: {fileID: 2045544516}
+  - component: {fileID: 2045544520}
   m_Layer: 5
   m_Name: PlaceOnPlane UI
   m_TagString: Untagged
@@ -1446,14 +1487,26 @@ RectTransform:
   m_Children:
   - {fileID: 1234765915}
   - {fileID: 944752602}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 634209935}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2045544520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045544515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4997ea1ad65187446bedb5e7a4932e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2087235348
 GameObject:
   m_ObjectHideFlags: 0
