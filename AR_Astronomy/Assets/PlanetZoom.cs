@@ -16,10 +16,15 @@ public class PlanetZoom : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 clickedObject = hit.collider.gameObject;
-                //originalTransform = clickedObject.transform;
+                originalTransform = clickedObject.transform;
                 clickedObject.transform.localScale = new Vector3(3, 3, 3);
+                
             }
+
+            clickedObject.transform.localScale =originalTransform.localScale;
+
         }
+        
 
     }
 
