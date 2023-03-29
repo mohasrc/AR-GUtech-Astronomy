@@ -290,6 +290,7 @@ GameObject:
   - component: {fileID: 634209933}
   - component: {fileID: 634209932}
   - component: {fileID: 634209936}
+  - component: {fileID: 634209937}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -371,8 +372,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6bd1870e98db0b40b479f96f49f4d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPlace: {fileID: 0}
+  objectToPlace: {fileID: 380373667092614164, guid: 23411c8ed96641f49bdbd9470d48e9a0,
+    type: 3}
   placementIndicator: {fileID: 1468667494}
+--- !u!114 &634209937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634209931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143072b72e8eae847982cecb3e7882bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +574,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainScene
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &944752604
@@ -832,7 +846,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1103,7 +1117,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -133, y: -104}
+  m_AnchoredPosition: {x: -125.25, y: -96}
   m_SizeDelta: {x: 195.24268, y: 44.684296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1234765916
