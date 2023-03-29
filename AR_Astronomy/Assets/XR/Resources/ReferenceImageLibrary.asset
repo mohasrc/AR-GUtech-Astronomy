@@ -18,12 +18,12 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 4990444556270381954
-      m_GuidHigh: 9976294077343121824
+      m_GuidLow: 5518343064629782856
+      m_GuidHigh: 15243024393000977539
     m_SerializedTextureGuid:
-      m_GuidLow: 4419408702920560884
-      m_GuidHigh: 812304129605921242
+      m_GuidLow: 10751409575517514387
+      m_GuidHigh: 8566472412153175338
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
-    m_Name: falak
+    m_Name: falak_logo
     m_Texture: {fileID: 0}
