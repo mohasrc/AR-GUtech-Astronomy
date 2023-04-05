@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6bd1870e98db0b40b479f96f49f4d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPlace: {fileID: 6607276702022305405, guid: 23411c8ed96641f49bdbd9470d48e9a0,
+  objectToPlace: {fileID: 6589890061909856222, guid: 23411c8ed96641f49bdbd9470d48e9a0,
     type: 3}
   placementIndicator: {fileID: 1468667494}
 --- !u!114 &634209937
@@ -809,12 +809,12 @@ MonoBehaviour:
       m_Name: Position
       m_Type: 0
       m_ExpectedControlType: Vector3
-      m_Id: 
+      m_Id: 31437f42-f935-40d8-a31b-024109dced9f
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 
+        m_Id: 16f89edd-9ef4-4338-a047-c346b62e6a96
         m_Path: <XRHMD>/centerEyePosition
         m_Interactions: 
         m_Processors: 
@@ -837,12 +837,12 @@ MonoBehaviour:
       m_Name: Rotation
       m_Type: 0
       m_ExpectedControlType: Quaternion
-      m_Id: 
+      m_Id: 11d7a76e-de1c-4cab-b3a5-09e067f800b2
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 
+        m_Id: 5f190b60-b2de-48fd-878e-68f125de189b
         m_Path: <XRHMD>/centerEyeRotation
         m_Interactions: 
         m_Processors: 
@@ -865,7 +865,7 @@ MonoBehaviour:
       m_Name: Tracking State
       m_Type: 0
       m_ExpectedControlType: Integer
-      m_Id: 
+      m_Id: 234114da-e344-4ecd-8b87-4821838d7719
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
