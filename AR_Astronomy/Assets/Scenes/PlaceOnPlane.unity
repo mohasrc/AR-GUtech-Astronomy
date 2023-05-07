@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 4619050111155591825, guid: 7cfb75ee901d850449706c7223e52878,
+  m_PlanePrefab: {fileID: 2258248229317962856, guid: 3823610ff847eaf45ada08189ccc9db3,
     type: 3}
   m_DetectionMode: 1
 --- !u!114 &634209934
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6bd1870e98db0b40b479f96f49f4d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPlace: {fileID: 4619050111155591825, guid: 7cfb75ee901d850449706c7223e52878,
+  objectToPlace: {fileID: 3546937590535862633, guid: 7cfb75ee901d850449706c7223e52878,
     type: 3}
   placementIndicator: {fileID: 1468667494}
 --- !u!114 &634209937
