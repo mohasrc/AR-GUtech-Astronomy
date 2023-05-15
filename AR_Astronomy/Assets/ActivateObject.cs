@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ActivateObject : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class ActivateObject : MonoBehaviour
                 {
                     var objectScript = hit.collider.GetComponent<RotatePlanet>();
                     objectScript.isActive = !objectScript.isActive;
+                    
                 }
             }
         }
