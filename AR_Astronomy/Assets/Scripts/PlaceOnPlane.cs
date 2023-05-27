@@ -16,8 +16,8 @@ public class PlaceOnPlane : MonoBehaviour
 
     void Start()
     {
-        raycaster = FindObjectOfType<ARRaycastManager>(true); // Populating AR Components automatically
-        planecaster = FindObjectOfType<ARPlaneManager>(true);
+        raycaster = FindObjectOfType<ARRaycastManager>(); 
+        planecaster = FindObjectOfType<ARPlaneManager>();
         raycaster.enabled = true; // Enable the Components (safety meassure)
         planecaster.enabled = true;
     }
@@ -56,13 +56,17 @@ public class PlaceOnPlane : MonoBehaviour
         {
             placementIndicator.SetActive(false); // deactivate the Indicator when we dont hit a plane
         }
+
+        if (placedObject != null) {
+            placementIndicator.SetActive(false);
+        }
     }
 
     public void PlaceObject() // Function to call when button is pressed
     {
         if (placementPoseIsValid) // check if we hit a plane
         {
-            if (placedObject != null) // destroy old turbine if there already exists one
+            if (placedObject != null)
                 Destroy(placedObject);
 
             placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation); // Clone a turbine at the
