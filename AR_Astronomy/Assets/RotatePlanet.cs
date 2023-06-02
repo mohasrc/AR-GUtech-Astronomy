@@ -8,20 +8,14 @@ public class RotatePlanet : MonoBehaviour
     public GameObject panel;
     public bool show = false;
 
-    float lastTapTime = 0;
-    float doubleTapThreshold = 0.3f;
-
-    // Start is called before the first frame update
     void Start()
     {
         show = false;
         panel.SetActive(show);
     }
 
-    // Update is called once per frame
     void Update()
     {
-
         if (isActive)
         {
            
@@ -31,19 +25,10 @@ public class RotatePlanet : MonoBehaviour
 
                 if (screenTouch.phase == TouchPhase.Began)
                 {
-                    if (Time.time - lastTapTime <= doubleTapThreshold)
-                    {
-                        lastTapTime = 0;
-
-                        show = true;
-                        panel.SetActive(show);
-                    }
-                    else
-                    {
-                        lastTapTime = Time.time;
-
-                 
-                    }
+                
+                    show = true;
+                    panel.SetActive(show);
+                
                 }
 
                 if (screenTouch.phase == TouchPhase.Moved)
