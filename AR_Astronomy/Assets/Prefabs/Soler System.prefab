@@ -14845,7 +14845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Planet Orbit Around the Sun
+  m_text: Planets Orbit Around the Sun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19829,7 +19829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &3216762666581170328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20369,7 +20369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &5283191326106625772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20581,7 +20581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &6119772667409812364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20778,7 +20778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &4334374304390110987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21348,7 +21348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &2062418423516320989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21756,7 +21756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &120262755785965036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21953,7 +21953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &944122063572631902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22331,7 +22331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &9085910853824454023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22943,7 +22943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  rotate: 0
+  rotate: 1
 --- !u!114 &1667747670537742795
 MonoBehaviour:
   m_ObjectHideFlags: 0
