@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RaycastPrefab: {fileID: 1752034592783460647, guid: 7cfb75ee901d850449706c7223e52878,
+  m_RaycastPrefab: {fileID: 7645216150278938542, guid: 7cfb75ee901d850449706c7223e52878,
     type: 3}
 --- !u!114 &634209933
 MonoBehaviour:
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6bd1870e98db0b40b479f96f49f4d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPlace: {fileID: 1752034592783460647, guid: 7cfb75ee901d850449706c7223e52878,
+  objectToPlace: {fileID: 7645216150278938542, guid: 7cfb75ee901d850449706c7223e52878,
     type: 3}
   placementIndicator: {fileID: 1468667494}
 --- !u!114 &634209937

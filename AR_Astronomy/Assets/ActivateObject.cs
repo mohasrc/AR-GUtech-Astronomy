@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class ActivateObject : MonoBehaviour
 {
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
@@ -22,7 +14,7 @@ public class ActivateObject : MonoBehaviour
             {
                 if (hit.transform.tag == "planet")
                 {
-                    var objectScript = hit.collider.GetComponent<RotatePlanet>();
+                    var objectScript = hit.collider.GetComponent<TouchPlanet>();
                     objectScript.isActive = !objectScript.isActive;
                     
                 }

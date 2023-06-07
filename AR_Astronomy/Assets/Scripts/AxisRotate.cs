@@ -3,7 +3,7 @@ using UnityEngine;
 public class AxisRotate : MonoBehaviour
 {
     public float speed = 1f;
-    public bool rotate = false;
+    public bool rotate = true;
     // Update is called once per frame
     void Update()
     {
