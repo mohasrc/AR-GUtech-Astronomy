@@ -27,17 +27,9 @@ public class PlaceOnPlane : MonoBehaviour
         Vector3 screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f, 0.5f)); //3D Point in the Middle of the Screen
         List<ARRaycastHit> hits = new List<ARRaycastHit>(); // List of points we hit with the Raycast
 
-        raycaster.Raycast(screenCenter, hits, TrackableType.Planes); // The bool ARRaycastManager.Raycast(args) sends a ray
-                                                                     // from the AR Camera through a point (in this case the middle of the screen).
-                                                                     // When this Ray hits one or more AR Features (here we aim for points on planes)
-                                                                     // it returns true and safes each of the hitpoints in a "ARRaycastHit" object.
-                                                                     // A ARRaycastHit contains valuable information like name of the plane or position
-                                                                     // and rotation of the feature (here of the plane point). 
+        raycaster.Raycast(screenCenter, hits, TrackableType.Planes); 
 
-        placementPoseIsValid = hits.Count > 0; // We say the placement pose is valid when we hit at least one plane.
-                                               // placementPoseIsValid =  raycaster.Raycast(screenCenter, hits, TrackableType.Planes); would access the
-                                               // bool directly and should also be possible in most cases.
-                                               // Again, we check the count to be sure
+        placementPoseIsValid = hits.Count > 0;
 
         if (placementPoseIsValid)
         {
@@ -45,18 +37,17 @@ public class PlaceOnPlane : MonoBehaviour
 
             var cameraForward = Camera.current.transform.forward; // The direction Vector the AR Camera is looking in
             var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized; // Normalize the Direction Vector and flatening it on the x-z plane
-            placementPose.rotation = Quaternion.LookRotation(cameraBearing); // Rotate the placement pose so it looks in the same direction as the camera
-                                                                             // With this the placed Turbine always oriented in direction of the Camera
+            placementPose.rotation = Quaternion.LookRotation(cameraBearing); 
 
             placementIndicator.SetActive(true); // Make the Indicator visible
-            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation); //Overlap the pose of the Indicator
-                                                                                                                 //with the placement pose
+            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
         else
         {
             placementIndicator.SetActive(false); // deactivate the Indicator when we dont hit a plane
         }
 
+        // if we have placed an object in the scene then remove the placement indicator
         if (placedObject != null) {
             placementIndicator.SetActive(false);
         }
@@ -69,9 +60,7 @@ public class PlaceOnPlane : MonoBehaviour
             if (placedObject != null)
                 Destroy(placedObject);
 
-            placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation); // Clone a turbine at the
-                                                                                                       // position of the placement
-                                                                                                       // pose with the right rotation
+            placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
         }
     }
 }
