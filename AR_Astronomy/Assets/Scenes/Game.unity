@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3708984, g: 0.37837017, b: 0.35722524, a: 1}
+  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -888,7 +888,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1993963877}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.82300884
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1940,6 +1940,7 @@ GameObject:
   - component: {fileID: 1189528031}
   - component: {fileID: 1189528030}
   - component: {fileID: 1189528033}
+  - component: {fileID: 1189528034}
   m_Layer: 5
   m_Name: Button_[Exit]
   m_TagString: Untagged
@@ -2024,6 +2025,18 @@ MonoBehaviour:
           m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1189528034}
+        m_TargetAssemblyTypeName: DeletePrefabWithTag, Assembly-CSharp
+        m_MethodName: DestroyPrefabsInScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: QuizSound
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1189528031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,6 +2085,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4997ea1ad65187446bedb5e7a4932e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1189528034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189528028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fed9f146a6b6d74ba95e909460a1d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1279700871
